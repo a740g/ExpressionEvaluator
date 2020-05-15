@@ -51,105 +51,105 @@ Friend Class FrmMain
     'It can be modified using the Windows Form Designer.
     'Do not modify it using the code editor.
     <DebuggerStepThrough()> Private Sub InitializeComponent()
-        Me.components = New ComponentModel.Container()
-        Dim resources As ComponentModel.ComponentResourceManager = New ComponentModel.ComponentResourceManager(GetType(FrmMain))
-        Me.ToolTip1 = New ToolTip(Me.components)
-        Me.CmdClear = New Button()
-        Me.ChkInstant = New CheckBox()
-        Me.CmdDefine = New Button()
-        Me.CmdEvaluate = New Button()
-        Me.TxtExpression = New TextBox()
-        Me.LblResult = New Label()
-        Me.Label1 = New Label()
+        Me.components = New System.ComponentModel.Container()
+        Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(FrmMain))
+        Me.ToolTip1 = New System.Windows.Forms.ToolTip(Me.components)
+        Me.CmdClear = New System.Windows.Forms.Button()
+        Me.ChkInstant = New System.Windows.Forms.CheckBox()
+        Me.CmdDefine = New System.Windows.Forms.Button()
+        Me.CmdEvaluate = New System.Windows.Forms.Button()
+        Me.TxtExpression = New System.Windows.Forms.TextBox()
+        Me.LblResult = New System.Windows.Forms.Label()
+        Me.Label1 = New System.Windows.Forms.Label()
         Me.SuspendLayout()
         '
-        'cmdClear
+        'CmdClear
         '
         Me.CmdClear.BackColor = System.Drawing.SystemColors.Control
         Me.CmdClear.Cursor = System.Windows.Forms.Cursors.Default
         Me.CmdClear.DialogResult = System.Windows.Forms.DialogResult.Cancel
-        Me.CmdClear.Font = New Font("Arial", 8.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.CmdClear.Font = New System.Drawing.Font("Arial", 8.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.CmdClear.ForeColor = System.Drawing.SystemColors.ControlText
-        Me.CmdClear.Location = New Point(384, 64)
-        Me.CmdClear.Name = "cmdClear"
+        Me.CmdClear.Location = New System.Drawing.Point(384, 64)
+        Me.CmdClear.Name = "CmdClear"
         Me.CmdClear.RightToLeft = System.Windows.Forms.RightToLeft.No
-        Me.CmdClear.Size = New Size(81, 25)
+        Me.CmdClear.Size = New System.Drawing.Size(81, 25)
         Me.CmdClear.TabIndex = 4
         Me.CmdClear.Text = "&Clear"
         Me.ToolTip1.SetToolTip(Me.CmdClear, "Clears everything.")
         Me.CmdClear.UseVisualStyleBackColor = False
         '
-        'chkInstant
+        'ChkInstant
         '
         Me.ChkInstant.BackColor = System.Drawing.SystemColors.Control
         Me.ChkInstant.Cursor = System.Windows.Forms.Cursors.Default
-        Me.ChkInstant.Font = New Font("Arial", 8.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.ChkInstant.Font = New System.Drawing.Font("Arial", 8.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.ChkInstant.ForeColor = System.Drawing.SystemColors.ControlText
-        Me.ChkInstant.Location = New Point(384, 8)
-        Me.ChkInstant.Name = "chkInstant"
+        Me.ChkInstant.Location = New System.Drawing.Point(384, 8)
+        Me.ChkInstant.Name = "ChkInstant"
         Me.ChkInstant.RightToLeft = System.Windows.Forms.RightToLeft.No
-        Me.ChkInstant.Size = New Size(80, 21)
+        Me.ChkInstant.Size = New System.Drawing.Size(80, 21)
         Me.ChkInstant.TabIndex = 2
         Me.ChkInstant.Text = "&Instant"
         Me.ToolTip1.SetToolTip(Me.ChkInstant, "Evaluates expression as it is being entered.")
         Me.ChkInstant.UseVisualStyleBackColor = False
         '
-        'cmdDefine
+        'CmdDefine
         '
         Me.CmdDefine.BackColor = System.Drawing.SystemColors.Control
         Me.CmdDefine.Cursor = System.Windows.Forms.Cursors.Default
-        Me.CmdDefine.Font = New Font("Arial", 8.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.CmdDefine.Font = New System.Drawing.Font("Arial", 8.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.CmdDefine.ForeColor = System.Drawing.SystemColors.ControlText
-        Me.CmdDefine.Location = New Point(384, 32)
-        Me.CmdDefine.Name = "cmdDefine"
+        Me.CmdDefine.Location = New System.Drawing.Point(384, 32)
+        Me.CmdDefine.Name = "CmdDefine"
         Me.CmdDefine.RightToLeft = System.Windows.Forms.RightToLeft.No
-        Me.CmdDefine.Size = New Size(81, 25)
+        Me.CmdDefine.Size = New System.Drawing.Size(81, 25)
         Me.CmdDefine.TabIndex = 3
         Me.CmdDefine.Text = "&Define"
         Me.ToolTip1.SetToolTip(Me.CmdDefine, "Define a symbol.")
         Me.CmdDefine.UseVisualStyleBackColor = False
         '
-        'cmdEvaluate
+        'CmdEvaluate
         '
         Me.CmdEvaluate.BackColor = System.Drawing.SystemColors.Control
         Me.CmdEvaluate.Cursor = System.Windows.Forms.Cursors.Default
-        Me.CmdEvaluate.Font = New Font("Arial", 8.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.CmdEvaluate.Font = New System.Drawing.Font("Arial", 8.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.CmdEvaluate.ForeColor = System.Drawing.SystemColors.ControlText
-        Me.CmdEvaluate.Location = New Point(384, 96)
-        Me.CmdEvaluate.Name = "cmdEvaluate"
+        Me.CmdEvaluate.Location = New System.Drawing.Point(384, 96)
+        Me.CmdEvaluate.Name = "CmdEvaluate"
         Me.CmdEvaluate.RightToLeft = System.Windows.Forms.RightToLeft.No
-        Me.CmdEvaluate.Size = New Size(81, 25)
+        Me.CmdEvaluate.Size = New System.Drawing.Size(81, 25)
         Me.CmdEvaluate.TabIndex = 5
         Me.CmdEvaluate.Text = "&Evaluate"
         Me.ToolTip1.SetToolTip(Me.CmdEvaluate, "Evaluate the expression.")
         Me.CmdEvaluate.UseVisualStyleBackColor = False
         '
-        'txtExpression
+        'TxtExpression
         '
         Me.TxtExpression.AcceptsReturn = True
         Me.TxtExpression.BackColor = System.Drawing.SystemColors.Window
         Me.TxtExpression.Cursor = System.Windows.Forms.Cursors.IBeam
         Me.TxtExpression.ForeColor = System.Drawing.SystemColors.WindowText
-        Me.TxtExpression.Location = New Point(8, 32)
+        Me.TxtExpression.Location = New System.Drawing.Point(8, 32)
         Me.TxtExpression.MaxLength = 0
         Me.TxtExpression.Multiline = True
-        Me.TxtExpression.Name = "txtExpression"
+        Me.TxtExpression.Name = "TxtExpression"
         Me.TxtExpression.RightToLeft = System.Windows.Forms.RightToLeft.No
         Me.TxtExpression.ScrollBars = System.Windows.Forms.ScrollBars.Vertical
-        Me.TxtExpression.Size = New Size(369, 89)
+        Me.TxtExpression.Size = New System.Drawing.Size(369, 89)
         Me.TxtExpression.TabIndex = 1
         Me.ToolTip1.SetToolTip(Me.TxtExpression, "Directly enter/edit the expression here.")
         '
-        'lblResult
+        'LblResult
         '
         Me.LblResult.BackColor = System.Drawing.SystemColors.Control
         Me.LblResult.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D
         Me.LblResult.Cursor = System.Windows.Forms.Cursors.Default
         Me.LblResult.ForeColor = System.Drawing.SystemColors.ControlText
-        Me.LblResult.Location = New Point(8, 8)
-        Me.LblResult.Name = "lblResult"
+        Me.LblResult.Location = New System.Drawing.Point(8, 8)
+        Me.LblResult.Name = "LblResult"
         Me.LblResult.RightToLeft = System.Windows.Forms.RightToLeft.No
-        Me.LblResult.Size = New Size(369, 21)
+        Me.LblResult.Size = New System.Drawing.Size(369, 21)
         Me.LblResult.TabIndex = 0
         Me.LblResult.Text = "0"
         Me.LblResult.TextAlign = System.Drawing.ContentAlignment.TopRight
@@ -161,12 +161,12 @@ Friend Class FrmMain
         Me.Label1.AutoSize = True
         Me.Label1.BackColor = System.Drawing.SystemColors.Control
         Me.Label1.Cursor = System.Windows.Forms.Cursors.Default
-        Me.Label1.Font = New Font("Arial", 8.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label1.Font = New System.Drawing.Font("Arial", 8.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label1.ForeColor = System.Drawing.SystemColors.ControlText
-        Me.Label1.Location = New Point(8, 128)
+        Me.Label1.Location = New System.Drawing.Point(8, 128)
         Me.Label1.Name = "Label1"
         Me.Label1.RightToLeft = System.Windows.Forms.RightToLeft.No
-        Me.Label1.Size = New Size(359, 14)
+        Me.Label1.Size = New System.Drawing.Size(359, 14)
         Me.Label1.TabIndex = 6
         Me.Label1.Text = "Copyright © Samuel Gomes, 2001-2020.     mailto: v_2samg@hotmail.com"
         Me.Label1.TextAlign = System.Drawing.ContentAlignment.TopCenter
@@ -175,9 +175,9 @@ Friend Class FrmMain
         '
         Me.AcceptButton = Me.CmdEvaluate
         Me.AllowDrop = True
-        Me.AutoScaleBaseSize = New Size(6, 15)
+        Me.AutoScaleBaseSize = New System.Drawing.Size(5, 13)
         Me.CancelButton = Me.CmdClear
-        Me.ClientSize = New Size(470, 148)
+        Me.ClientSize = New System.Drawing.Size(470, 148)
         Me.Controls.Add(Me.CmdClear)
         Me.Controls.Add(Me.ChkInstant)
         Me.Controls.Add(Me.CmdDefine)
@@ -185,13 +185,10 @@ Friend Class FrmMain
         Me.Controls.Add(Me.TxtExpression)
         Me.Controls.Add(Me.Label1)
         Me.Controls.Add(Me.LblResult)
-        Me.Font = New Font("Tahoma", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedDialog
-        Me.Icon = CType(resources.GetObject("$this.Icon"), Icon)
+        Me.Icon = CType(resources.GetObject("$this.Icon"), System.Drawing.Icon)
         Me.MaximizeBox = False
         Me.Name = "FrmMain"
-        Me.Opacity = 0.99R
-        Me.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen
         Me.Text = "Expression Evaluator"
         Me.ResumeLayout(False)
         Me.PerformLayout()

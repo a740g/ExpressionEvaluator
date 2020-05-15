@@ -21,10 +21,10 @@
     <OptionExplicit>On</OptionExplicit>
     <OptionStrict>On</OptionStrict>
     <RootNamespace>Calculator</RootNamespace>
-    <StartupObject>Calculator.FrmMain</StartupObject>
+    <StartupObject>Calculator.My.MyApplication</StartupObject>
     <FileUpgradeFlags>
     </FileUpgradeFlags>
-    <MyType>WindowsFormsWithCustomSubMain</MyType>
+    <MyType>WindowsForms</MyType>
     <UpgradeBackupLocation>
     </UpgradeBackupLocation>
     <OldToolsVersion>0.0</OldToolsVersion>
@@ -112,10 +112,19 @@
     <Compile Include="modExpressionEvaluator.vb">
       <SubType>Code</SubType>
     </Compile>
+    <Compile Include="My Project\Application.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Application.myapp</DependentUpon>
+    </Compile>
     <Compile Include="SymbolTable.vb">
       <SubType>Code</SubType>
     </Compile>
     <Content Include="Calculator.ico" />
+    <None Include="My Project\Application.myapp">
+      <Generator>MyApplicationCodeGenerator</Generator>
+      <LastGenOutput>Application.Designer.vb</LastGenOutput>
+    </None>
     <EmbeddedResource Include="frmMain.resX">
       <DependentUpon>frmMain.vb</DependentUpon>
     </EmbeddedResource>
